@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --bg-color: #000000;
+    --text-color: #ffffff;
+    --accent-color: #E0FBFC;
+    --secondary-bg: #ffffff;
+    --secondary-text: #000000;
+    --card-bg: #1a1a1a;
+    --card-text: #ffffff;
+    --image-blend-mode: lighten;
+}
+
+[data-theme="light"] {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --accent-color: #3D5A80;
+    --secondary-bg: #000000;
+    --secondary-text: #ffffff;
+    --card-bg: #f0f0f0;
+    --card-text: #000000;
+    --image-blend-mode: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* ... (previous navbar and other styles remain exactly the same) ... */
+
+.home-img .img-box {
+    position: relative;
+    width: 32vw;
+    height: 32vw;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.home-img .img-box::before,
+.home-img .img-box::after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: conic-gradient(transparent, transparent, transparent, var(--accent-color));
+    transform: rotate(0deg);
+    animation: rotate-border 10s linear infinite;
+}
+
+.home-img .img-box::after {
+    animation-delay: -5s;
+}
+
+.home-img .img-box .img-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.home-img .img-box .img-item img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 50%;
+    mix-blend-mode: var(--image-blend-mode);
+}
+
+/* ... (rest of the CSS remains exactly the same) ... */

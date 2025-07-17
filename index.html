@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owais |  Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="final2.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="final2.ico" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">Muhammad Owais</a>
+        <ul>
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="bars-animation">
+        <div class="bar" style="--i:6"></div>
+        <div class="bar" style="--i:5"></div>
+        <div class="bar" style="--i:4"></div>
+        <div class="bar" style="--i:3"></div>
+        <div class="bar" style="--i:2"></div>
+        <div class="bar" style="--i:1"></div>
+    </div>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-info">
+            <h1>Muhammad Owais</h1>
+            <h2>I am a
+                <span style="--i:4;" data-text="Front-end Developer">Front-end Developer</span>
+                <span style="--i:3;" data-text="Cybersecurity Engineer">Cybersecurity Engineer</span>
+                <span style="--i:2;" data-text="Product Designer">Product Designer</span>
+                <span style="--i:1;" data-text="Skilled in Responsive Design">Skilled in Responsive Design</span>
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nemo sit non? Ab laborum dicta incidunt, debitis commodi deleniti molestiae voluptates culpa non facilis optio impedit libero voluptas exercitationem assumenda.</p>
+            <div class="btn-sci">
+                <a href="https://drive.google.com/file/d/1xEw7fcUo2HVeQdS0tdGYSt23iPMiDCd9/view" class="btn">Download CV</a>
+                <div class="sci">
+                    <a href="https://github.com/codemaestroowais"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/owaiskhubaisi/"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.twitter.com"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.youtube.com/@techtuneowais"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="bg2-removebg-preview (2).png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-info">
+            <div class="about-block">
+                <h2>About Me</h2>
+                <p>I am a Computer Science student at UET Lahore with a strong passion for software development, AI, and cybersecurity. Beyond my coursework, I have spent a lot of time building real-world projects, such as Chrome extensions, database management systems, AI-powered detection systems, and even a project where I implemented IP banning to block brute force attacks and a DSA learning platform. I mostly work on front-end development because I really enjoy building easy-to-use and good-looking websites.</p>
+                <p>I specialize in front-end development and WordPress. I focus on making interfaces that are not just beautiful, but also easy to use and optimized for performance.</p>
+                <p>I enjoy working with C++, C#, Python, and JavaScript (React). I like writing clean and simple code and making designs that are easy for people to use. I have also tried building network tools and Chrome extensions along the way.</p>
+                <p>Right now, I am learning more about AI, front-end development, and cybersecurity. I am excited to use my skills in real projects and keep learning from experienced people in the field.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="services-info">
+            <h2>Services</h2>
+            <p>I offer a wide range of web development services to help businesses grow and engage their audiences. My services include:</p>
+            <div class="services-list">
+                <div class="service-item">
+                    <h3>Web Development</h3>
+                </div>
+                <div class="service-item">
+                    <h3>WordPress</h3>
+                </div>
+                <div class="service-item">
+                    <h3>SEO</h3>
+                </div>
+                <div class="service-item">
+                    <h3>Content/Blog Writing</h3>
+                </div>
+                <div class="service-item">
+                    <h3>Projects Management</h3>
+                </div>
+                <div class="service-item">
+                    <h3>Simple Management System</h3>
+                </div>
+                <div class="service-item">
+                    <h3>Responsive Web Design</h3>
+                </div>
+                <div class="service-item">
+                    <h3>AI Models</h3>
+                </div>
+                <div class="service-item">
+                    <h3>.NET Frameworks</h3>
+                </div>
+                <div class="service-item">
+                    <h3>Windows Forms</h3>
+                </div>
+            </div>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+<script>
+    document.querySelector('.btn').addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector('#contact');
+        window.scrollTo({
+            top: target.offsetTop - 50,  // Adjust this number to give space above the button
+            behavior: 'smooth'
+        });
+    });
+</script>
+
+
+    <!-- Projects Section -->
+<section class="projects" id="projects">
+    <div class="projects-info">
+        <h2>My Projects</h2>
+        <p>Here are some of the projects I have worked on recently:</p>
+        <div class="projects-list">
+            <!-- Project 6: DSA Scraping & Sorting -->
+            <div class="project-item">
+                <img src="DSA Scraping & Sorting.png" alt="DSA Scraping & Sorting" class="project-img">
+                <h3>📊 DSA Scraping & Sorting</h3>
+                <p>Scraped data from AliBaba & eBay, implemented 8 sorting algorithms.</p>
+                <div class="project-links">
+                    <a href="https://github.com/codemaestroowais/DSA-Scrapping-and-Sorting-Project" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <!-- Project 9: Solitaire Game -->
+            <div class="project-item">
+                <img src="Solitaire Game.jpg" alt="Solitaire Game" class="project-img">
+                <h3>🃏 Solitaire Game</h3>
+                <p>GUI-based game using Klondike algorithm and DSA structures.</p>
+                <div class="project-links">
+                    <a href="https://github.com/codemaestroowais/DSA-Solitaire-Game-Project" target="_blank">GitHub</a>
+                    <a href="https://youtu.be/FlLpKNnKSYo?si=cOkxI0F1p8zenGyn" target="_blank">YouTube</a>
+                </div>
+            </div>
+
+            <!-- Project 10: WOE Learning Platform -->
+            <div class="project-item">
+                <img src="WOE Learning Platform.png" alt="WOE Learning Platform" class="project-img">
+                <h3>🎓 WOE Learning Platform</h3>
+                <p>Group project: DSA game-based learning with quizzes and puzzles.</p>
+                <div class="project-links">
+                    <a href="https://github.com/codemaestroowais/DSA-Final-Project-Mini-Play-Station" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+    <div class="contact-info">
+        <h2>Contact Us</h2>
+        <p>Feel free to get in touch with me for any inquiries or collaboration opportunities.</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</section>
+
+<script>
+    // Theme toggle functionality
+    const themeToggle = document.createElement('button');
+    themeToggle.className = 'theme-toggle';
+    themeToggle.innerHTML = '🌓';
+    document.body.appendChild(themeToggle);
+
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+    });
+
+    // Check for saved theme preference
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+</script>
+</body>
+
+</html>
