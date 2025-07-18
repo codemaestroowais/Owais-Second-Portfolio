@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Owais |  Portfolio</title>
+    <title>Owais | Portfolio</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="final2.ico" type="image/x-icon">
     <link rel="shortcut icon" href="final2.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 </head>
-
 <body>
+    <canvas id="particle-bg"></canvas>
     <nav class="navbar">
         <a href="#" class="logo">Muhammad Owais</a>
         <ul>
@@ -113,76 +114,71 @@
                     <h3>Windows Forms</h3>
                 </div>
             </div>
-            <a href="#contact" class="btn">Contact Me</a>
         </div>
     </section>
-<script>
-    document.querySelector('.btn').addEventListener('click', function(e) {
-        e.preventDefault();
-        const target = document.querySelector('#contact');
-        window.scrollTo({
-            top: target.offsetTop - 50,  // Adjust this number to give space above the button
-            behavior: 'smooth'
-        });
-    });
-</script>
-
 
     <!-- Projects Section -->
-<section class="projects" id="projects">
-    <div class="projects-info">
-        <h2>My Projects</h2>
-        <p>Here are some of the projects I have worked on recently:</p>
-        <div class="projects-list">
-            <!-- Project 6: DSA Scraping & Sorting -->
-            <div class="project-item">
-                <img src="DSA Scraping & Sorting.png" alt="DSA Scraping & Sorting" class="project-img">
-                <h3>📊 DSA Scraping & Sorting</h3>
-                <p>Scraped data from AliBaba & eBay, implemented 8 sorting algorithms.</p>
-                <div class="project-links">
-                    <a href="https://github.com/codemaestroowais/DSA-Scrapping-and-Sorting-Project" target="_blank">GitHub</a>
+    <section class="projects" id="projects">
+        <div class="projects-info">
+            <h2>My Projects</h2>
+            <p>Here are some of the projects I have worked on recently:</p>
+            <div class="projects-list">
+                <div class="project-item">
+                    <img src="DSA Scraping & Sorting.png" alt="DSA Scraping & Sorting" class="project-img" loading="lazy">
+                    <h3>📊 DSA Scraping & Sorting</h3>
+                    <p>Scraped data from AliBaba & eBay, implemented 8 sorting algorithms.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/codemaestroowais/DSA-Scrapping-and-Sorting-Project" target="_blank">GitHub</a>
+                    </div>
                 </div>
-            </div>
-            <!-- Project 9: Solitaire Game -->
-            <div class="project-item">
-                <img src="Solitaire Game.jpg" alt="Solitaire Game" class="project-img">
-                <h3>🃏 Solitaire Game</h3>
-                <p>GUI-based game using Klondike algorithm and DSA structures.</p>
-                <div class="project-links">
-                    <a href="https://github.com/codemaestroowais/DSA-Solitaire-Game-Project" target="_blank">GitHub</a>
-                    <a href="https://youtu.be/FlLpKNnKSYo?si=cOkxI0F1p8zenGyn" target="_blank">YouTube</a>
+                <div class="project-item">
+                    <img src="Solitaire Game.jpg" alt="Solitaire Game" class="project-img" loading="lazy">
+                    <h3>🃏 Solitaire Game</h3>
+                    <p>GUI-based game using Klondike algorithm and DSA structures.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/codemaestroowais/DSA-Solitaire-Game-Project" target="_blank">GitHub</a>
+                        <a href="https://youtu.be/FlLpKNnKSYo?si=cOkxI0F1p8zenGyn" target="_blank">YouTube</a>
+                    </div>
                 </div>
-            </div>
-
-            <!-- Project 10: WOE Learning Platform -->
-            <div class="project-item">
-                <img src="WOE Learning Platform.png" alt="WOE Learning Platform" class="project-img">
-                <h3>🎓 WOE Learning Platform</h3>
-                <p>Group project: DSA game-based learning with quizzes and puzzles.</p>
-                <div class="project-links">
-                    <a href="https://github.com/codemaestroowais/DSA-Final-Project-Mini-Play-Station" target="_blank">GitHub</a>
+                <div class="project-item">
+                    <img src="WOE Learning Platform.png" alt="WOE Learning Platform" class="project-img" loading="lazy">
+                    <h3>🎓 WOE Learning Platform</h3>
+                    <p>Group project: DSA game-based learning with quizzes and puzzles.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/codemaestroowais/DSA-Final-Project-Mini-Play-Station" target="_blank">GitHub</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Feel free to get in touch with me for any inquiries or collaboration opportunities.</p>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
 
-<!-- Contact Section -->
-<section class="contact" id="contact">
-    <div class="contact-info">
-        <h2>Contact Us</h2>
-        <p>Feel free to get in touch with me for any inquiries or collaboration opportunities.</p>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Submit</button>
-        </form>
-    </div>
-</section>
+    <button class="theme-toggle">🌓</button>
 
 <script>
+        // Scroll to Home on page load
+        window.addEventListener('load', () => {
+            const homeSection = document.querySelector('#home');
+            if (homeSection) {
+                window.scrollTo({
+                    top: homeSection.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
     // Theme toggle functionality
     const themeToggle = document.createElement('button');
     themeToggle.className = 'theme-toggle';
@@ -201,5 +197,4 @@
     document.documentElement.setAttribute('data-theme', savedTheme);
 </script>
 </body>
-
 </html>
