@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Owais | Portfolio</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="final2.ico" type="image/x-icon">
     <link rel="shortcut icon" href="final2.ico" type="image/x-icon">
@@ -14,9 +15,14 @@
 </head>
 <body>
     <canvas id="particle-bg"></canvas>
+    <div class="cursor"></div>
+    
     <nav class="navbar">
         <a href="#" class="logo">Muhammad Owais</a>
-        <ul>
+        <div class="menu-toggle">
+            <div class="hamburger"></div>
+        </div>
+        <ul class="nav-links">
             <li class="active"><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -37,28 +43,28 @@
     <!-- Home Section -->
     <section class="home" id="home">
         <div class="home-info">
-            <h1>Muhammad Owais</h1>
-            <h2>I am a
+            <h1 class="animate__animated animate__fadeInDown">Muhammad Owais</h1>
+            <h2 class="animate__animated animate__fadeInDown animate__delay-1s">I am a
                 <span style="--i:4;" data-text="Front-end Developer">Front-end Developer</span>
                 <span style="--i:3;" data-text="Cybersecurity Engineer">Cybersecurity Engineer</span>
                 <span style="--i:2;" data-text="Product Designer">Product Designer</span>
                 <span style="--i:1;" data-text="Skilled in Responsive Design">Skilled in Responsive Design</span>
             </h2>
-            <p>CS student at UET Lahore passionate about front-end, AI, and cybersecurity, with experience in building real-world projects using C++, Python, JavaScript (React), and WordPress.</p>
-            <div class="btn-sci">
+            <p class="animate__animated animate__fadeIn animate__delay-2s">CS student at UET Lahore passionate about front-end, AI, and cybersecurity, with experience in building real-world projects using C++, Python, JavaScript (React), and WordPress.</p>
+            <div class="btn-sci animate__animated animate__fadeInUp animate__delay-3s">
                 <a href="https://drive.google.com/file/d/1xEw7fcUo2HVeQdS0tdGYSt23iPMiDCd9/view" class="btn">Download CV</a>
                 <div class="sci">
-                    <a href="https://github.com/codemaestroowais"><i class='bx bxl-github'></i></a>
-                    <a href="https://www.linkedin.com/in/owaiskhubaisi/"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://www.twitter.com"><i class='bx bxl-twitter'></i></a>
-                    <a href="https://www.youtube.com/@techtuneowais"><i class='bx bxl-youtube'></i></a>
+                    <a href="https://github.com/codemaestroowais" class="social-icon"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/owaiskhubaisi/" class="social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.twitter.com" class="social-icon"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.youtube.com/@techtuneowais" class="social-icon"><i class='bx bxl-youtube'></i></a>
                 </div>
             </div>
         </div>
         <div class="home-img">
             <div class="img-box">
                 <div class="img-item">
-                    <img src="123.png" alt="">
+                    <img src="123.png" alt="Muhammad Owais">
                 </div>
             </div>
         </div>
@@ -68,11 +74,51 @@
     <section class="about" id="about">
         <div class="about-info">
             <div class="about-block">
-                <h2>About Me</h2>
-                <p>I am a Computer Science student at UET Lahore with a strong passion for software development, AI, and cybersecurity. Beyond my coursework, I have spent a lot of time building real-world projects, such as Chrome extensions, database management systems, AI-powered detection systems, and even a project where I implemented IP banning to block brute force attacks and a DSA learning platform. I mostly work on front-end development because I really enjoy building easy-to-use and good-looking websites.</p>
-                <p>I specialize in front-end development and WordPress. I focus on making interfaces that are not just beautiful, but also easy to use and optimized for performance.</p>
-                <p>I enjoy working with C++, C#, Python, and JavaScript (React). I like writing clean and simple code and making designs that are easy for people to use. I have also tried building network tools and Chrome extensions along the way.</p>
-                <p>Right now, I am learning more about AI, front-end development, and cybersecurity. I am excited to use my skills in real projects and keep learning from experienced people in the field.</p>
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <p>I am a Computer Science student at UET Lahore with a strong passion for software development, AI, and cybersecurity. Beyond my coursework, I have spent a lot of time building real-world projects, such as Chrome extensions, database management systems, AI-powered detection systems, and even a project where I implemented IP banning to block brute force attacks and a DSA learning platform. I mostly work on front-end development because I really enjoy building easy-to-use and good-looking websites.</p>
+                    <p>I specialize in front-end development and WordPress. I focus on making interfaces that are not just beautiful, but also easy to use and optimized for performance.</p>
+                    <p>I enjoy working with C++, C#, Python, and JavaScript (React). I like writing clean and simple code and making designs that are easy for people to use. I have also tried building network tools and Chrome extensions along the way.</p>
+                    <p>Right now, I am learning more about AI, front-end development, and cybersecurity. I am excited to use my skills in real projects and keep learning from experienced people in the field.</p>
+                </div>
+                <div class="skills-chart">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Front-end Development</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Cybersecurity</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>AI/ML</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>WordPress</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -80,38 +126,58 @@
     <!-- Services Section -->
     <section class="services" id="services">
         <div class="services-info">
-            <h2>Services</h2>
-            <p>I offer a wide range of web development services to help businesses grow and engage their audiences. My services include:</p>
+            <h2 class="section-title">Services</h2>
+            <p class="section-subtitle">I offer a wide range of web development services to help businesses grow and engage their audiences. My services include:</p>
             <div class="services-list">
                 <div class="service-item">
+                    <div class="service-icon"><i class='bx bx-code-alt'></i></div>
                     <h3>Web Development</h3>
+                    <p>Custom websites built with modern technologies for optimal performance.</p>
                 </div>
                 <div class="service-item">
+                    <div class="service-icon"><i class='bx bxl-wordpress'></i></div>
                     <h3>WordPress</h3>
+                    <p>Professional WordPress sites with custom themes and plugins.</p>
                 </div>
                 <div class="service-item">
+                    <div class="service-icon"><i class='bx bx-search-alt'></i></div>
                     <h3>SEO</h3>
+                    <p>Search engine optimization to improve your online visibility.</p>
                 </div>
                 <div class="service-item">
+                    <div class="service-icon"><i class='bx bx-edit'></i></div>
                     <h3>Content/Blog Writing</h3>
+                    <p>Engaging content tailored to your audience and business goals.</p>
                 </div>
                 <div class="service-item">
+                    <div class="service-icon"><i class='bx bx-task'></i></div>
                     <h3>Projects Management</h3>
+                    <p>Efficient project planning and execution for tech initiatives.</p>
                 </div>
                 <div class="service-item">
+                    <div class="service-icon"><i class='bx bx-data'></i></div>
                     <h3>Simple Management System</h3>
+                    <p>Custom management solutions for your business needs.</p>
                 </div>
                 <div class="service-item">
+                    <div class="service-icon"><i class='bx bx-devices'></i></div>
                     <h3>Responsive Web Design</h3>
+                    <p>Websites that look great on all devices and screen sizes.</p>
                 </div>
                 <div class="service-item">
+                    <div class="service-icon"><i class='bx bx-brain'></i></div>
                     <h3>AI Models</h3>
+                    <p>Custom AI solutions for your specific business challenges.</p>
                 </div>
                 <div class="service-item">
+                    <div class="service-icon"><i class='bx bx-window'></i></div>
                     <h3>.NET Frameworks</h3>
+                    <p>Robust applications built with Microsoft's .NET framework.</p>
                 </div>
                 <div class="service-item">
+                    <div class="service-icon"><i class='bx bx-desktop'></i></div>
                     <h3>Windows Forms</h3>
+                    <p>Desktop applications with intuitive user interfaces.</p>
                 </div>
             </div>
         </div>
@@ -120,32 +186,63 @@
     <!-- Projects Section -->
     <section class="projects" id="projects">
         <div class="projects-info">
-            <h2>My Projects</h2>
-            <p>Here are some of the projects I have worked on recently:</p>
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">Here are some of the projects I have worked on recently:</p>
             <div class="projects-list">
                 <div class="project-item">
-                    <img src="DSA Scraping & Sorting.png" alt="DSA Scraping & Sorting" class="project-img" loading="lazy">
+                    <div class="project-img-container">
+                        <img src="DSA Scraping & Sorting.png" alt="DSA Scraping & Sorting" class="project-img" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/codemaestroowais/DSA-Scrapping-and-Sorting-Project" target="_blank" class="project-link"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
                     <h3>📊 DSA Scraping & Sorting</h3>
                     <p>Scraped data from AliBaba & eBay, implemented 8 sorting algorithms.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Web Scraping</span>
+                        <span>Algorithms</span>
+                    </div>
                     <div class="project-links">
-                        <a href="https://github.com/codemaestroowais/DSA-Scrapping-and-Sorting-Project" target="_blank">GitHub</a>
+                        <a href="https://github.com/codemaestroowais/DSA-Scrapping-and-Sorting-Project" target="_blank" class="project-btn">View Code <i class='bx bx-code'></i></a>
                     </div>
                 </div>
                 <div class="project-item">
-                    <img src="Solitaire Game.jpg" alt="Solitaire Game" class="project-img" loading="lazy">
+                    <div class="project-img-container">
+                        <img src="Solitaire Game.jpg" alt="Solitaire Game" class="project-img" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/codemaestroowais/DSA-Solitaire-Game-Project" target="_blank" class="project-link"><i class='bx bx-link-external'></i></a>
+                            <a href="https://youtu.be/FlLpKNnKSYo?si=cOkxI0F1p8zenGyn" target="_blank" class="project-link"><i class='bx bx-play'></i></a>
+                        </div>
+                    </div>
                     <h3>🃏 Solitaire Game</h3>
                     <p>GUI-based game using Klondike algorithm and DSA structures.</p>
+                    <div class="project-tech">
+                        <span>C++</span>
+                        <span>GUI</span>
+                        <span>OOP</span>
+                    </div>
                     <div class="project-links">
-                        <a href="https://github.com/codemaestroowais/DSA-Solitaire-Game-Project" target="_blank">GitHub</a>
-                        <a href="https://youtu.be/FlLpKNnKSYo?si=cOkxI0F1p8zenGyn" target="_blank">YouTube</a>
+                        <a href="https://github.com/codemaestroowais/DSA-Solitaire-Game-Project" target="_blank" class="project-btn">View Code <i class='bx bx-code'></i></a>
+                        <a href="https://youtu.be/FlLpKNnKSYo?si=cOkxI0F1p8zenGyn" target="_blank" class="project-btn">Demo <i class='bx bx-play'></i></a>
                     </div>
                 </div>
                 <div class="project-item">
-                    <img src="WOE Learning Platform.png" alt="WOE Learning Platform" class="project-img" loading="lazy">
+                    <div class="project-img-container">
+                        <img src="WOE Learning Platform.png" alt="WOE Learning Platform" class="project-img" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/codemaestroowais/DSA-Final-Project-Mini-Play-Station" target="_blank" class="project-link"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
                     <h3>🎓 WOE Learning Platform</h3>
                     <p>Group project: DSA game-based learning with quizzes and puzzles.</p>
+                    <div class="project-tech">
+                        <span>C++</span>
+                        <span>DSA</span>
+                        <span>Education</span>
+                    </div>
                     <div class="project-links">
-                        <a href="https://github.com/codemaestroowais/DSA-Final-Project-Mini-Play-Station" target="_blank">GitHub</a>
+                        <a href="https://github.com/codemaestroowais/DSA-Final-Project-Mini-Play-Station" target="_blank" class="project-btn">View Code <i class='bx bx-code'></i></a>
                     </div>
                 </div>
             </div>
@@ -155,18 +252,84 @@
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="contact-info">
-            <h2>Contact Us</h2>
-            <p>Feel free to get in touch with me for any inquiries or collaboration opportunities.</p>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Submit</button>
-            </form>
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Feel free to get in touch with me for any inquiries or collaboration opportunities.</p>
+            <div class="contact-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                        <i class='bx bx-user'></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                        <i class='bx bx-envelope'></i>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                        <i class='bx bx-message'></i>
+                    </div>
+                    <button type="submit" class="btn">Send Message <i class='bx bx-paper-plane'></i></button>
+                </form>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class='bx bx-map'></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Lahore, Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class='bx bx-envelope'></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>owaiskhubaisi@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class='bx bx-phone'></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+92 123 456 7890</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="#" class="logo">Muhammad Owais</a>
+                <p>Front-end Developer & Cybersecurity Engineer</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Connect With Me</h3>
+                <div class="social-icons">
+                    <a href="https://github.com/codemaestroowais" class="social-icon"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/owaiskhubaisi/" class="social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.twitter.com" class="social-icon"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.youtube.com/@techtuneowais" class="social-icon"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Muhammad Owais. All Rights Reserved.</p>
+        </div>
+    </footer>
+
     <button class="theme-toggle">🌓</button>
+    <a href="#home" class="scroll-top"><i class='bx bx-up-arrow-alt'></i></a>
 
 <script>
         // Scroll to Home on page load
@@ -184,7 +347,7 @@
     themeToggle.className = 'theme-toggle';
     themeToggle.innerHTML = '🌓';
     document.body.appendChild(themeToggle);
-
+    
     themeToggle.addEventListener('click', () => {
         const currentTheme = document.documentElement.getAttribute('data-theme');
         const newTheme = currentTheme === 'light' ? 'dark' : 'light';
